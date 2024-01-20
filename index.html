@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Read more & less project</title>
+        <style>
+            body {
+                background-color: rgb(43, 43, 43);
+            }
+            div.main {
+                width: 300px;
+                color: rgb(255, 255, 255);
+                margin: auto;
+                background-color: rgb(46, 129, 94);
+                position: relative;
+                padding: 15px;
+                border-radius: 10px;
+                font-size: 20px;
+            }
+            div.container {
+                width: 300px;
+                border-radius: 20px;
+            }
+            div input {
+                color: white;
+                background-color: rgb(43, 43, 43);
+                border-radius: 20px;
+                font-size: 1.2rem;
+                height: 35px;
+                width: 100%;
+                outline: none;
+                border: none;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 80px;
+                height: 40px;
+                width: 55px;
+                border-radius: 10px;
+                border: none;
+                font-size: 1.1rem;
+                background-color: rgb(46, 129, 94);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div id="container">
+                <input type="text" id="input" />
+                <span id="txt" style="display: none"></span>
+            </div>
+            <button id="snd" style="color: rgb(255, 255, 255); cursor: pointer" onclick="more()">Send</button>
+        </div>
+        <p style="margin: 100px 0; color: rgb(221, 215, 215); font-size: large; padding: 0 20px;">
+            You can put under 1000 characters in this input field. It will work same as whatsapp. If your text cross 200
+            characters' limit it wil show a "Read more" button, clicking on which you will be able to see next 200 characters and so on.
+            And if you cross 1000 characters' limit it will alert you ' your text is longer more (only 1000 characters
+            allowed) '.
+        </p>
+        <script src="app.js"></script>
+    </body>
+</html>
